@@ -5,11 +5,15 @@ let mangoQuantity = 0;
 let mangoPrice = 15;
 
 function inputValue(){
-    userInput = document.querySelector("input").value;
-    console.log(userInput);
-    var inputItem = document.querySelector("#user-balance");
-    alert("The balance you entered: " +userInput+ " PKR");
-    inputItem.innerHTML = userInput;
+    if(userInput == null){
+        alert("Please enter some balance");
+    }
+    else{
+        userInput = document.querySelector("input").value;
+        console.log(userInput);
+        var inputItem = document.querySelector("#user-balance");
+        alert("The balance you entered: " +userInput+ " PKR");
+        inputItem.innerHTML = userInput;
     }
 }
 
