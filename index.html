@@ -1,0 +1,40 @@
+	<DOCTYPE! html>
+	<html lang="en">
+	<head>
+	  <title>JavaScript Fruit Shop Task</title>
+	  <link rel="stylesheet" type="text/css" href="style.css">
+	  <script src="script.js"></script>
+	</head>
+	<body>
+	  <header>
+	    <img style="width: 100%; height: 50%;" src="banner.jpg">
+	  </header>
+
+	  <section>
+		<h1>Hello! Welcome to Mango Shop!!</h1>
+	    <div class="sec1">
+	        <input type="number" placeholder="Please enter your balance">
+	        <button onclick="inputValue()">Add balance</button>
+	    </div>
+
+	    <div class="sec2">
+
+	        <div class="fruit-body">
+	            <p style="padding: 10px;">Price = 15/rs</p>
+	            <img class="fruit_img" src="mango.png" alt="Mango Image">
+	            <div style="padding: 10px;"><button onclick="addMango();" class="btn-action">+</button>
+	            <span id="quantityOfMango">0</span>
+	            <button onclick="subMango();" class="btn-action">-</button></div>
+	        </div>
+
+	    </div>
+
+	  </section>
+
+	  <footer class="sec1">
+	    <p> Your Balance: <span id="user-balance"></span> /rs</p>
+	    <p> Total Amount: <span id="total"></span> /rs</p>
+	    <p> Balance Left: <span id="balance"></span> /rs</p>
+	  </footer>
+	</body>
+	</html>
